@@ -3,13 +3,15 @@ body {
   margin: 0 auto;
   min-height: 100vh;
   display: grid;
-  grid-template: 
-      "... header header header ..." 150px
-      "... ...... ...... ...... ..."
-      "... left   center right  ..." 1fr
-      "... ...... ...... ...... ..."
-      "... footer footer footer ..." 250px
-      / auto 150px 1fr 200px auto; 
+  grid-template:
+      "... ...... ...... ...... ...... ...... ..." 10px
+      "... header header header header header ..." 150px
+      "... ...... ...... ...... ...... ...... ..." 20px
+      "... left   ...... center ...... right  ..." 1fr
+      "... ...... ...... ...... ...... ...... ..."
+      "... footer footer footer footer footer ..." 250px
+      "... ...... ...... ...... ...... ...... ..." 10px
+      / auto 150px 30px 1fr 10px 150px auto; 
 }
 
 header {
