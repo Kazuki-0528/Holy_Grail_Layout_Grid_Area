@@ -5,9 +5,14 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template:
-    "header header header"
-    "left   center right "
-    "footer footer footer";
+    "...... ...... ....... ...... ......" 10px
+    "header header header header header" 150px
+    "...... ...... ....... ...... ......" 10px
+    "left   ...... center ...... right " 1fr
+    "...... ...... ....... ...... ......" 10px
+    "footer footer footer footer footer" 250px
+    "...... ...... ....... ...... ......" 10px
+    / 100px 10px 1fr 10px 150px;
 }
 
 header {
@@ -28,4 +33,15 @@ aside {
 
 footer {
   grid-area: footer;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template:
+      "header" 150px
+      "center" 1fr
+      "left  "
+      "right "
+      "footer" 250px;
+  }
 }
